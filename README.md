@@ -17,27 +17,33 @@ nature, and fantasy.
 - `preview.png`: imagem do seletor de temas / theme selector preview.
 - `preview-unlock.png`: prévia da tela de desbloqueio / unlock preview.
 - `unlock.png`: símbolo Ankh transparente / transparent Ankh emblem.
-- `backgrounds/`: wallpapers 16:9 e 21:9 / 16:9 and 21:9 wallpapers.
+- `backgrounds/`: três wallpapers 16:9 em alta resolução / three high-resolution 16:9 wallpapers.
 
 ## Wallpapers
 
-### 16:9
+O tema contém exatamente três wallpapers 16:9 em 3840×2160. Eles são
+fotografias reais, apenas recortadas, ampliadas e tratadas com uma graduação
+pastel azul-ardósia para combinar com o tema.
 
-- `01-ankh-study.png`: escritório com vista para as montanhas.
-- `02-ankh-meadow.png`: campo aberto visto do espaço de estudo.
-- `03-ankh-window.png`: janela, mesa e paisagem ao entardecer.
+The theme contains exactly three 3840×2160 16:9 wallpapers. They are real
+photographs, only cropped, upscaled, and given a restrained slate-blue pastel
+grade to match the theme.
 
-### Ultrawide 21:9
-
-- `01-ankh-study-ultrawide.png`
-- `02-ankh-meadow-ultrawide.png`
-- `03-ankh-window-ultrawide.png`
+- `01-ankh-study.png`: mesa junto à janela, com luz quente e vegetação.
+- `02-ankh-mountain.png`: montanha nevada em luz suave.
+- `03-ankh-lake.png`: lago enevoado cercado por pinheiros.
 
 ## Integrações / Integrations
 
 O Omarchy gera automaticamente os temas do terminal, Neovim, Helix, VS Code,
 btop, Chromium e do shell a partir de `colors.toml`. Este repositório também
 inclui refinamentos para GTK, Walker, Waybar, Mako, SwayOSD, Superfile e Zed.
+
+`preview.png` e `preview-unlock.png` são capturas reais do desktop e do
+lockscreen do Omarchy, não mockups gerados.
+
+`preview.png` and `preview-unlock.png` are real captures of the Omarchy
+desktop and lock screen, not generated UI mockups.
 
 Omarchy generates terminal, Neovim, Helix, VS Code, btop, Chromium, and shell
 themes from `colors.toml`. This repository also includes refinements for GTK,
@@ -78,7 +84,10 @@ omarchy theme bg next
 ## Desenvolvimento / Development
 
 O GitHub Actions valida automaticamente a paleta, o `preview.png`, o
-`preview-unlock.png` e as proporções dos wallpapers.
+`preview-unlock.png` e garante que existam exatamente três wallpapers 16:9.
+
+As fontes e os créditos das fotografias estão em
+[ATTRIBUTIONS.md](ATTRIBUTIONS.md).
 
 Uma variante escura instalável está disponível em
 [omarchy-ankh-dark-theme](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).

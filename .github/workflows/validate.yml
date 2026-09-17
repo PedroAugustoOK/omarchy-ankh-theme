@@ -42,17 +42,16 @@ jobs:
           assert abs(ratio - (16 / 9)) < 0.03, 'preview.png should be 16:9'
 
           wallpapers = sorted((root / 'backgrounds').glob('*.png'))
-          assert len(wallpapers) >= 6, 'three standard and three ultrawide wallpapers are required'
+          assert len(wallpapers) == 3, 'exactly three wallpapers are required'
           for wallpaper in wallpapers:
               width, height = png_size(wallpaper)
               ratio = width / height
-              allowed = abs(ratio - (16 / 9)) < 0.03 or abs(ratio - (21 / 9)) < 0.03
-              assert allowed, f'{wallpaper} should be 16:9 or 21:9'
+              assert abs(ratio - (16 / 9)) < 0.03, f'{wallpaper} should be 16:9'
 
           unlock_preview = root / 'preview-unlock.png'
           assert unlock_preview.is_file(), 'preview-unlock.png is required'
           width, height = png_size(unlock_preview)
           assert abs((width / height) - (16 / 9)) < 0.03, 'preview-unlock.png should be 16:9'
 
-          print(f'Validated {len(colors)} colors, preview, and {len(wallpapers)} wallpapers.')
+          print(f'Validated {len(colors)} colors, preview, and exactly {len(wallpapers)} wallpapers.')
           PY
