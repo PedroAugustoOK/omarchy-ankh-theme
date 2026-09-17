@@ -21,17 +21,15 @@ nature, and fantasy.
 
 ## Wallpapers
 
-O tema contém exatamente três wallpapers 16:9 em 3840×2160. Eles são
-fotografias reais, apenas recortadas, ampliadas e tratadas com uma graduação
-pastel azul-ardósia para combinar com o tema.
+O tema contém exatamente três wallpapers 16:9 em 3840×2160, fornecidos para a
+identidade visual do Ankh e preparados para uso em monitores de alta resolução.
 
-The theme contains exactly three 3840×2160 16:9 wallpapers. They are real
-photographs, only cropped, upscaled, and given a restrained slate-blue pastel
-grade to match the theme.
+The theme contains exactly three 3840×2160 16:9 wallpapers supplied for the
+Ankh visual identity and prepared for high-resolution displays.
 
 - `01-ankh-study.png`: mesa junto à janela, com luz quente e vegetação.
-- `02-ankh-mountain.png`: montanha nevada em luz suave.
-- `03-ankh-lake.png`: lago enevoado cercado por pinheiros.
+- `02-ankh-meadow.png`: estudo aberto para um campo e uma vila distante.
+- `03-ankh-window.png`: mesa clara junto à janela, com caderno e laptop.
 
 ## Integrações / Integrations
 
@@ -86,7 +84,7 @@ omarchy theme bg next
 O GitHub Actions valida automaticamente a paleta, o `preview.png`, o
 `preview-unlock.png` e garante que existam exatamente três wallpapers 16:9.
 
-As fontes e os créditos das fotografias estão em
+As notas de origem dos assets estão em
 [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
 
 Uma variante escura instalável está disponível em
