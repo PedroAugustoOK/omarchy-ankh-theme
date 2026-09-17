@@ -80,6 +80,12 @@ omarchy theme bg next
 O GitHub Actions valida automaticamente a paleta, o `preview.png`, o
 `preview-unlock.png` e as proporções dos wallpapers.
 
+Uma variante escura instalável está disponível em
+[omarchy-ankh-dark-theme](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
+
+An installable dark companion is available at
+[omarchy-ankh-dark-theme](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
+
 ## Licença / License
 
 MIT. Veja [LICENSE](LICENSE).
