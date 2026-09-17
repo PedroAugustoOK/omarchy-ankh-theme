@@ -1,0 +1,40 @@
+@define-color selected-text #243746;
+@define-color text #243746;
+@define-color base #F4F6F8;
+@define-color border #71808C;
+@define-color foreground #243746;
+@define-color background #F4F6F8;
+@define-color accent #527A9E;
+
+window * {
+    all: unset;
+    color: @text;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+window .box-wrapper {
+    background: alpha(@base, 0.96) !important;
+    background-image: none !important;
+    border-radius: 8px;
+    border: 1px solid alpha(@border, 0.55);
+    padding: 10px;
+    min-width: 260px;
+    box-shadow: 0 4px 18px alpha(#172A38, 0.18);
+}
+
+window .search-container {
+    border: 1px solid alpha(@accent, 0.55);
+    border-radius: 6px;
+    padding: 6px 9px;
+    margin-bottom: 5px;
+}
+
+window .input { color: @text; background: transparent; }
+window .item-text-box { padding: 7px 0; }
+window .item-box { padding: 0 8px; border-radius: 6px; }
+window child:selected { background: alpha(@accent, 0.18); border-radius: 6px; }
+window child:selected .item-box * { color: @selected-text; }
