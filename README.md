@@ -1,60 +1,21 @@
 # Omarchy Ankh
 
-Tema claro e sóbrio para Omarchy, com azul ardósia, neutros frios e acentos
-quentes dessaturados. Os wallpapers retratam um espaço de estudo e trabalho
-com referências médicas, natureza e fantasia — a identidade visual do Ankh.
+Tema claro, sóbrio e calmo para Omarchy v4. O Ankh combina off-white frio,
+azul ardósia e acentos quentes dessaturados; os três wallpapers fornecidos
+trazem estudo, natureza e referências médicas sem recorrer a imagens geradas.
 
-Omarchy's light theme with slate blue, cool neutrals, and muted warm accents.
-Its wallpapers portray a study and work space shaped by medical references,
-nature, and fantasy.
+![Desktop Ankh — captura real do Omarchy](preview.png)
 
-![Prévia do Omarchy Ankh](preview.png)
+![Lockscreen Ankh — captura real do Omarchy](preview-unlock.png)
 
-## Estrutura / Structure
+## Instalação
 
-- `colors.toml`: paleta semântica principal do Omarchy v4 / main Omarchy v4 palette.
-- `icons.theme`: ícones Yaru Blue / Yaru Blue icons.
-- `shell.toml`: superfícies do Quickshell, inclusive menus, notificações e lockscreen.
-- `preview.png`: imagem do seletor de temas / theme selector preview.
-- `preview-unlock.png`: prévia da tela de desbloqueio / unlock preview.
-- `unlock.png`: símbolo Ankh transparente / transparent Ankh emblem.
-- `backgrounds/`: três wallpapers 16:9 em alta resolução / three high-resolution 16:9 wallpapers.
+```bash
+omarchy theme install https://github.com/PedroAugustoOK/omarchy-ankh-theme
+omarchy theme set ankh
+```
 
-## Wallpapers
-
-O tema contém exatamente três wallpapers 16:9 em 3840×2160, fornecidos para a
-identidade visual do Ankh e preparados para uso em monitores de alta resolução.
-
-The theme contains exactly three 3840×2160 16:9 wallpapers supplied for the
-Ankh visual identity and prepared for high-resolution displays.
-
-- `01-ankh-study.png`: mesa junto à janela, com luz quente e vegetação.
-- `02-ankh-meadow.png`: estudo aberto para um campo e uma vila distante.
-- `03-ankh-window.png`: mesa clara junto à janela, com caderno e laptop.
-
-## Integrações / Integrations
-
-O Omarchy gera automaticamente os temas do terminal, Neovim, Helix e VS Code
-a partir de `colors.toml`. Este repositório inclui refinamentos para Quickshell,
-GTK, Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop, Chromium, Cava, fzf,
-Steam e Vencord.
-
-`preview.png` e `preview-unlock.png` são capturas reais do desktop e do
-lockscreen do Omarchy, não mockups gerados.
-
-`preview.png` and `preview-unlock.png` are real captures of the Omarchy
-desktop and lock screen, not generated UI mockups.
-
-Omarchy generates terminal, Neovim, Helix, and VS Code themes from
-`colors.toml`. This repository also includes refinements for Quickshell, GTK,
-Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop, Chromium, Cava, fzf,
-Steam, and Vencord.
-
-Arquivos que executam código — como `.lua`, configurações de terminal e
-`vscode.json` — são deliberadamente evitados para manter o tema seguro quando
-instalado a partir de um repositório Git.
-
-## Instalação local / Local installation
+Para usar este checkout durante o desenvolvimento:
 
 ```bash
 mkdir -p ~/.config/omarchy/themes
@@ -62,40 +23,49 @@ ln -sfn "$PWD" ~/.config/omarchy/themes/ankh
 omarchy theme set ankh
 ```
 
-## Instalação pelo GitHub / GitHub installation
+Alterne entre os três wallpapers com `omarchy theme bg next`.
+
+## O que está incluído
+
+- Paleta `colors.toml` com contraste mínimo de 7:1 para texto principal.
+- `shell.toml` completo para barra, controles, menus, launcher, notificações,
+  polkit, lockscreen e seletor de imagens do Quickshell.
+- Ícones `Yaru-blue`, escolhidos para manter a identidade azul discreta em GTK.
+- Integrações com GTK, Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop,
+  Chromium, Cava, fzf, Steam e Vencord.
+- Complementos opcionais para bat, Lazygit, Fastfetch, Yazi e git-delta em
+  [INTEGRATIONS.md](INTEGRATIONS.md).
+
+O Omarchy gera automaticamente terminal, Neovim, Helix, VS Code e Obsidian a
+partir de `colors.toml`. Os arquivos opcionais não são copiados sobre suas
+preferências existentes.
+
+## Wallpapers
+
+Há exatamente três imagens PNG em 3840×2160 (16:9):
+
+- `01-ankh-study.png` — mesa junto à janela, luz quente e vegetação.
+- `02-ankh-meadow.png` — estudo aberto para campo e vila distante.
+- `03-ankh-window.png` — mesa clara, caderno e laptop junto à janela.
+
+## Desenvolvimento
+
+Valide localmente com:
 
 ```bash
-omarchy theme install https://github.com/PedroAugustoOK/omarchy-ankh-theme
-omarchy theme set ankh
+python3 scripts/validate-theme.py
 ```
 
-Alterne os wallpapers com:
+O teste verifica paleta, contraste, formatos TOML/JSON, referências de cores,
+assets obrigatórios, previews reais e as três imagens em alta resolução.
+Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de alterar assets e consulte
+[CHANGELOG.md](CHANGELOG.md) para as versões.
 
-```bash
-omarchy theme bg next
-```
+Notas de origem dos assets: [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
 
-## Paleta / Palette
+Para a variante noturna, veja
+[Omarchy Ankh Dark](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
 
-- Fundo / background: off-white frio `#F4F6F8`
-- Superfícies / surfaces: cinza-azulado `#E8EDF1`
-- Destaque / accent: azul ardósia `#466E92`
-- Texto / text: azul-marinho `#243746`
+## Licença
 
-## Desenvolvimento / Development
-
-O GitHub Actions valida automaticamente a paleta, o `preview.png`, o
-`preview-unlock.png` e garante que existam exatamente três wallpapers 16:9.
-
-As notas de origem dos assets estão em
-[ATTRIBUTIONS.md](ATTRIBUTIONS.md).
-
-Uma variante escura instalável está disponível em
-[omarchy-ankh-dark-theme](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
-
-An installable dark companion is available at
-[omarchy-ankh-dark-theme](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
-
-## Licença / License
-
-MIT. Veja [LICENSE](LICENSE).
+[MIT](LICENSE).
