@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a focused improvement for Ankh.
+title: "[idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Good requests preserve the Ankh identity: calm contrast, real imagery, and safe Omarchy theme assets.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What experience would improve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Shared light and dark behavior
+        - Light theme only
+        - Dark theme only
+        - Documentation
+        - Optional application integration

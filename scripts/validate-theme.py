@@ -18,7 +18,7 @@ REQUIRED_FILES = {
     "zed.json", "cava_theme", "fzf.fish", "steam.css", "vencord.theme.css",
     "bat.conf", "lazygit.yml", "fastfetch.jsonc", "yazi-theme.toml",
     "delta.gitconfig", "INTEGRATIONS.md", "CONTRIBUTING.md", "CHANGELOG.md",
-    "LICENSE", "ATTRIBUTIONS.md", "unlock.png",
+    "LICENSE", "ATTRIBUTIONS.md", "unlock.png", "README.md", "docs/DESIGN.md",
 }
 REQUIRED_SHELL_SECTIONS = {
     "bar", "controls", "spacing", "font", "popups", "tooltip",

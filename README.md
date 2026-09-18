@@ -1,71 +1,110 @@
-# Omarchy Ankh
+<p align="center">
+  <img src="unlock.png" width="190" alt="Ankh emblem">
+</p>
 
-Tema claro, sóbrio e calmo para Omarchy v4. O Ankh combina off-white frio,
-azul ardósia e acentos quentes dessaturados; os três wallpapers fornecidos
-trazem estudo, natureza e referências médicas sem recorrer a imagens geradas.
+<h1 align="center">Omarchy Ankh</h1>
 
-![Desktop Ankh — captura real do Omarchy](preview.png)
+<p align="center">
+  A calm, high-contrast light theme for <strong>Omarchy v4</strong>.<br>
+  Cool paper, slate blue, and three supplied high-resolution wallpapers.
+</p>
 
-![Lockscreen Ankh — captura real do Omarchy](preview-unlock.png)
+<p align="center">
+  <a href="https://github.com/PedroAugustoOK/omarchy-ankh-theme/releases/tag/v1.0.0"><img src="https://img.shields.io/github/v/release/PedroAugustoOK/omarchy-ankh-theme?display_name=tag&style=flat-square" alt="Latest release"></a>
+  <a href="https://github.com/PedroAugustoOK/omarchy-ankh-theme/actions/workflows/validate.yml"><img src="https://github.com/PedroAugustoOK/omarchy-ankh-theme/actions/workflows/validate.yml/badge.svg" alt="Validation status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/PedroAugustoOK/omarchy-ankh-theme?style=flat-square" alt="MIT license"></a>
+</p>
 
-## Instalação
+<p align="center">
+  <a href="#install">Install</a> ·
+  <a href="#gallery">Gallery</a> ·
+  <a href="#whats-included">Included</a> ·
+  <a href="INTEGRATIONS.md">Integrations</a> ·
+  <a href="CONTRIBUTING.md">Contribute</a>
+</p>
 
-```bash
+![Omarchy Ankh desktop — real Quickshell menu capture](preview.png)
+
+## A considered light theme
+
+Ankh is for a desktop that feels focused rather than sterile: cool off-white
+surfaces, legible slate-blue focus states, and small warm accents for context.
+It is built around the supplied study wallpapers, not around generated artwork.
+
+- **Readable by default** — 7:1 minimum contrast for primary text, 4.5:1 for accent and muted text.
+- **A complete shell** — bar, launcher, menus, notifications, polkit, image picker, and lock screen share one surface language.
+- **Safe to install** — works with Omarchy's Git-installed-theme model without shipping executable configuration.
+
+## Install
+
+~~~bash
 omarchy theme install https://github.com/PedroAugustoOK/omarchy-ankh-theme
 omarchy theme set ankh
-```
+~~~
 
-Para usar este checkout durante o desenvolvimento:
+Cycle the three included wallpapers with <code>omarchy theme bg next</code>.
 
-```bash
-mkdir -p ~/.config/omarchy/themes
-ln -sfn "$PWD" ~/.config/omarchy/themes/ankh
-omarchy theme set ankh
-```
+> Want the nocturnal counterpart? See [Omarchy Ankh Dark](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
 
-Alterne entre os três wallpapers com `omarchy theme bg next`.
+## Gallery
 
-## O que está incluído
+<table>
+  <tr>
+    <td width="50%">
+      <img src="preview.png" alt="Ankh light desktop with the Omarchy menu">
+      <sub><strong>Desktop</strong> — real Quickshell menu capture.</sub>
+    </td>
+    <td width="50%">
+      <img src="preview-unlock.png" alt="Ankh light lock screen with visible password field">
+      <sub><strong>Lock screen</strong> — actual Omarchy lock preview.</sub>
+    </td>
+  </tr>
+</table>
 
-- Paleta `colors.toml` com contraste mínimo de 7:1 para texto principal.
-- `shell.toml` completo para barra, controles, menus, launcher, notificações,
-  polkit, lockscreen e seletor de imagens do Quickshell.
-- Ícones `Yaru-blue`, escolhidos para manter a identidade azul discreta em GTK.
-- Integrações com GTK, Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop,
-  Chromium, Cava, fzf, Steam e Vencord.
-- Complementos opcionais para bat, Lazygit, Fastfetch, Yazi e git-delta em
-  [INTEGRATIONS.md](INTEGRATIONS.md).
+All previews are real captures from this theme on Omarchy v4. They are never AI
+mockups. The desktop image shows the included Ankh workspace; the lock screen
+shows the password field in its standard position.
 
-O Omarchy gera automaticamente terminal, Neovim, Helix, VS Code e Obsidian a
-partir de `colors.toml`. Os arquivos opcionais não são copiados sobre suas
-preferências existentes.
+## What's included
+
+| Surface | Coverage |
+| --- | --- |
+| **Omarchy** | colors.toml, Quickshell shell.toml, Yaru Blue icons, three 3840×2160 wallpapers |
+| **Desktop** | GTK, Walker, Waybar, Mako, SwayOSD, Superfile, Zed, Chromium |
+| **Terminal & media** | btop, Cava, fzf, Steam, Vencord |
+| **Optional companions** | bat, Lazygit, Fastfetch, Yazi, git-delta — see [INTEGRATIONS.md](INTEGRATIONS.md) |
+
+Omarchy automatically derives terminal, Neovim, Helix, VS Code, and Obsidian
+from colors.toml. Optional companion files are documented separately so they
+never overwrite a person's existing configuration.
 
 ## Wallpapers
 
-Há exatamente três imagens PNG em 3840×2160 (16:9):
+Exactly three PNG wallpapers are included, each at **3840×2160**:
 
-- `01-ankh-study.png` — mesa junto à janela, luz quente e vegetação.
-- `02-ankh-meadow.png` — estudo aberto para campo e vila distante.
-- `03-ankh-window.png` — mesa clara, caderno e laptop junto à janela.
+| File | Scene |
+| --- | --- |
+| 01-ankh-study.png | Desk by a window, warm light, and greenery |
+| 02-ankh-meadow.png | Study opening toward a meadow and distant village |
+| 03-ankh-window.png | Bright desk, notebook, and laptop by the window |
 
-## Desenvolvimento
+Their origin and processing notes live in [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
 
-Valide localmente com:
+## Project quality
 
-```bash
+~~~bash
 python3 scripts/validate-theme.py
-```
+~~~
 
-O teste verifica paleta, contraste, formatos TOML/JSON, referências de cores,
-assets obrigatórios, previews reais e as três imagens em alta resolução.
-Leia [CONTRIBUTING.md](CONTRIBUTING.md) antes de alterar assets e consulte
-[CHANGELOG.md](CHANGELOG.md) para as versões.
+The same validation runs in GitHub Actions. It checks palette semantics,
+contrast, TOML/JSON parsing, color references, required assets, real preview
+dimensions, and the three exact wallpaper dimensions.
 
-Notas de origem dos assets: [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
+- [Design principles](docs/DESIGN.md)
+- [Integration guide](INTEGRATIONS.md)
+- [Contribution guide](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
 
-Para a variante noturna, veja
-[Omarchy Ankh Dark](https://github.com/PedroAugustoOK/omarchy-ankh-dark-theme).
-
-## Licença
+## License
 
 [MIT](LICENSE).
