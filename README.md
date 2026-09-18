@@ -29,7 +29,7 @@ A versão escura está em
   wallpapers.
 - Ícones Yaru Blue.
 - Tema do btop.
-- Três wallpapers PNG em 3840×2160.
+- Quatro wallpapers PNG em 3840×2160.
 - Capturas reais do desktop e da tela de bloqueio.
 
 ## Tela de bloqueio
@@ -45,6 +45,7 @@ O campo de senha segue o layout padrão do Omarchy.
 | 01-ankh-study.png | Mesa, janela e vegetação |
 | 02-ankh-meadow.png | Estudo aberto para o campo |
 | 03-ankh-window.png | Mesa clara, caderno e laptop |
+| 04-omarchy-wordmark.png | Wordmark oficial em fundo claro |
 
 As notas sobre os assets estão em [ATTRIBUTIONS.md](ATTRIBUTIONS.md).
 

@@ -79,7 +79,7 @@ def main():
         assert abs(width / height - 16 / 9) < 0.03
 
     wallpapers = sorted((ROOT / "backgrounds").glob("*.png"))
-    assert len(wallpapers) == 3, "exactly three wallpapers are required"
+    assert len(wallpapers) == 4, "exactly four wallpapers are required"
     assert all(png_size(path) == (3840, 2160) for path in wallpapers)
 
     print(f"Validated {len(colors)} colors and {len(wallpapers)} wallpapers.")
