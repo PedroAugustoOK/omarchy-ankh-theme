@@ -1,11 +1,11 @@
-file_panel_border = '#71808C'
-sidebar_border = '#71808C'
-footer_border = '#71808C'
+file_panel_border = '#5F717D'
+sidebar_border = '#5F717D'
+footer_border = '#5F717D'
 
-file_panel_border_active = '#527A9E'
-sidebar_border_active = '#527A9E'
-footer_border_active = '#527A9E'
-modal_border_active = '#527A9E'
+file_panel_border_active = '#466E92'
+sidebar_border_active = '#466E92'
+footer_border_active = '#466E92'
+modal_border_active = '#466E92'
 
 full_screen_bg = '#F4F6F8'
 file_panel_bg = '#F4F6F8'
@@ -24,9 +24,9 @@ correct = '#668C77'
 error = '#B86B73'
 hint = '#638E99'
 cancel = '#B86B73'
-gradient_color = ['#DCE7F1', '#527A9E']
+gradient_color = ['#DCE7F1', '#466E92']
 
-file_panel_top_path = '#71808C'
+file_panel_top_path = '#5F717D'
 sidebar_title = '#243746'
-sidebar_item_selected_fg = '#527A9E'
-sidebar_divider = '#71808C'
+sidebar_item_selected_fg = '#466E92'
+sidebar_divider = '#5F717D'

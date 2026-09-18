@@ -8,16 +8,16 @@ theme[main_fg]="#243746"
 theme[title]="#243746"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#527A9E"
+theme[hi_fg]="#466E92"
 
 # Background color of selected item in processes box
 theme[selected_bg]="#DCE7F1"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#527A9E"
+theme[selected_fg]="#466E92"
 
 # Color of inactive/disabled text
-theme[inactive_fg]="#71808C"
+theme[inactive_fg]="#5F717D"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
 theme[graph_text]="#486174"
@@ -32,10 +32,10 @@ theme[proc_misc]="#486174"
 theme[cpu_box]="#897A98"
 theme[mem_box]="#668C77"
 theme[net_box]="#B86B73"
-theme[proc_box]="#527A9E"
+theme[proc_box]="#466E92"
 
 # Box divider line and small boxes line color
-theme[div_line]="#71808C"
+theme[div_line]="#5F717D"
 
 # Temperature graph color (Green -> Yellow -> Red)
 theme[temp_start]="#668C77"
@@ -44,16 +44,16 @@ theme[temp_end]="#B86B73"
 
 # CPU graph colors (Teal -> Blue -> Magenta)
 theme[cpu_start]="#638E99"
-theme[cpu_mid]="#527A9E"
+theme[cpu_mid]="#466E92"
 theme[cpu_end]="#897A98"
 
 # Mem/Disk free meter
 theme[free_start]="#897A98"
-theme[free_mid]="#527A9E"
+theme[free_mid]="#466E92"
 theme[free_end]="#638E99"
 
 # Mem/Disk cached meter
-theme[cached_start]="#527A9E"
+theme[cached_start]="#466E92"
 theme[cached_mid]="#638E99"
 theme[cached_end]="#897A98"
 
@@ -65,7 +65,7 @@ theme[available_end]="#B86B73"
 # Mem/Disk used meter (Green -> Teal -> Blue)
 theme[used_start]="#668C77"
 theme[used_mid]="#638E99"
-theme[used_end]="#527A9E"
+theme[used_end]="#466E92"
 
 # Download graph colors
 theme[download_start]="#A98955"
@@ -75,19 +75,19 @@ theme[download_end]="#B86B73"
 # Upload graph colors (Green -> Teal -> Blue)
 theme[upload_start]="#668C77"
 theme[upload_mid]="#638E99"
-theme[upload_end]="#527A9E"
+theme[upload_end]="#466E92"
 
 # Process box color gradient for threads, mem and cpu usage
 theme[process_start]="#638E99"
-theme[process_mid]="#527A9E"
+theme[process_mid]="#466E92"
 theme[process_end]="#897A98"
 
 # Graph gradient colors (spectrum shades from background to foreground)
 theme[gradient_color_0]="#F4F6F8"
 theme[gradient_color_1]="#FAFBFC"
 theme[gradient_color_2]="#DCE7F1"
-theme[gradient_color_3]="#71808C"
-theme[gradient_color_4]="#71808C"
+theme[gradient_color_3]="#5F717D"
+theme[gradient_color_4]="#5F717D"
 theme[gradient_color_5]="#243746"
 theme[gradient_color_6]="#486174"
 theme[gradient_color_7]="#172A38"

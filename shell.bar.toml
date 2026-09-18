@@ -1,6 +1,0 @@
-# Ankh-specific shell refinement. Other shell colors remain generated from
-# colors.toml so the palette stays synchronized.
-[bar]
-background-alpha = 0.96
-size-horizontal = 28
-size-vertical = 30

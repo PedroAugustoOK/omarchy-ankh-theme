@@ -14,6 +14,7 @@ nature, and fantasy.
 
 - `colors.toml`: paleta semântica principal do Omarchy v4 / main Omarchy v4 palette.
 - `icons.theme`: ícones Yaru Blue / Yaru Blue icons.
+- `shell.toml`: superfícies do Quickshell, inclusive menus, notificações e lockscreen.
 - `preview.png`: imagem do seletor de temas / theme selector preview.
 - `preview-unlock.png`: prévia da tela de desbloqueio / unlock preview.
 - `unlock.png`: símbolo Ankh transparente / transparent Ankh emblem.
@@ -33,9 +34,10 @@ Ankh visual identity and prepared for high-resolution displays.
 
 ## Integrações / Integrations
 
-O Omarchy gera automaticamente os temas do terminal, Neovim, Helix, VS Code,
-btop, Chromium e do shell a partir de `colors.toml`. Este repositório também
-inclui refinamentos para GTK, Walker, Waybar, Mako, SwayOSD, Superfile e Zed.
+O Omarchy gera automaticamente os temas do terminal, Neovim, Helix e VS Code
+a partir de `colors.toml`. Este repositório inclui refinamentos para Quickshell,
+GTK, Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop, Chromium, Cava, fzf,
+Steam e Vencord.
 
 `preview.png` e `preview-unlock.png` são capturas reais do desktop e do
 lockscreen do Omarchy, não mockups gerados.
@@ -43,9 +45,10 @@ lockscreen do Omarchy, não mockups gerados.
 `preview.png` and `preview-unlock.png` are real captures of the Omarchy
 desktop and lock screen, not generated UI mockups.
 
-Omarchy generates terminal, Neovim, Helix, VS Code, btop, Chromium, and shell
-themes from `colors.toml`. This repository also includes refinements for GTK,
-Walker, Waybar, Mako, SwayOSD, Superfile, and Zed.
+Omarchy generates terminal, Neovim, Helix, and VS Code themes from
+`colors.toml`. This repository also includes refinements for Quickshell, GTK,
+Walker, Waybar, Mako, SwayOSD, Superfile, Zed, btop, Chromium, Cava, fzf,
+Steam, and Vencord.
 
 Arquivos que executam código — como `.lua`, configurações de terminal e
 `vscode.json` — são deliberadamente evitados para manter o tema seguro quando
@@ -76,7 +79,7 @@ omarchy theme bg next
 
 - Fundo / background: off-white frio `#F4F6F8`
 - Superfícies / surfaces: cinza-azulado `#E8EDF1`
-- Destaque / accent: azul ardósia `#527A9E`
+- Destaque / accent: azul ardósia `#466E92`
 - Texto / text: azul-marinho `#243746`
 
 ## Desenvolvimento / Development
