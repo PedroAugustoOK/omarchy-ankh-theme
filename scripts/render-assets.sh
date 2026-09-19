@@ -8,8 +8,12 @@ foreground="#243746"
 accent="#466E92"
 canvas_w=3840
 canvas_h=2160
-wordmark_w=2300
-wordmark_h=540
+# Match the official Omarchy wordmark wallpaper proportions (1600x376 on a
+# 3840x2160 canvas). Rasterize at 2x and downsample for cleaner antialiasing.
+wordmark_w=1600
+wordmark_h=376
+wordmark_render_w=$((wordmark_w * 2))
+wordmark_render_h=$((wordmark_h * 2))
 
 command -v magick >/dev/null
 command -v rsvg-convert >/dev/null
@@ -21,7 +25,8 @@ trap 'rm -rf "$work_dir"' EXIT HUP INT TERM
 
 # Rasterize Omarchy's official vector wordmark at its final display size, then
 # recolor it without touching the alpha channel. This avoids scaling a bitmap.
-rsvg-convert -w "$wordmark_w" -h "$wordmark_h" /usr/share/omarchy/logo.svg -o "$work_dir/wordmark.png"
+rsvg-convert -w "$wordmark_render_w" -h "$wordmark_render_h" /usr/share/omarchy/logo.svg -o "$work_dir/wordmark-hi.png"
+magick "$work_dir/wordmark-hi.png" -resize "${wordmark_w}x${wordmark_h}" "$work_dir/wordmark.png"
 magick "$work_dir/wordmark.png" -channel RGB +level-colors "$accent","$accent" "$work_dir/wordmark.png"
 magick -size "${canvas_w}x${canvas_h}" "xc:$background" \
   "$work_dir/wordmark.png" -gravity center -composite \
