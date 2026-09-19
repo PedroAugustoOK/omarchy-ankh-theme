@@ -31,6 +31,12 @@ A versão escura está em
 - Tema do btop.
 - Quatro wallpapers PNG em 3840×2160.
 - Capturas reais do desktop e da tela de bloqueio.
+- Contrato semântico de cores para código em `code-colors.toml`, com temas
+  gerados para Zed, Helix e VS Code em `integrations/`.
+
+Os papéis de keywords, funções, tipos, strings, números, comentários e
+diagnósticos são compartilhados com Ankh Dark e Mooni. Para regenerar os
+arquivos de editor, execute `python3 scripts/generate-code-theme.py`.
 
 ## Tela de bloqueio
 

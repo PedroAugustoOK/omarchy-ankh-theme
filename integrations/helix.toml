@@ -1,0 +1,70 @@
+# Generated from code-colors.toml; do not edit directly.
+"keyword" = "accent"
+"keyword.control" = { fg = "accent", modifiers = ["italic"] }
+"function" = "blue"
+"function.builtin" = "blue"
+"function.macro" = "cyan"
+"type" = "yellow"
+"type.builtin" = "yellow"
+"constructor" = "blue"
+"constant" = "bright_yellow"
+"constant.builtin" = "bright_yellow"
+"constant.numeric" = "orange"
+"string" = "green"
+"string.regexp" = "green"
+"string.special" = "cyan"
+"comment" = { fg = "muted", modifiers = ["italic"] }
+"variable" = "foreground"
+"variable.parameter" = { fg = "foreground", modifiers = ["italic"] }
+"variable.other.member" = "cyan"
+"operator" = "cyan"
+"tag" = "blue"
+"namespace" = "yellow"
+"attribute" = "yellow"
+"punctuation" = "muted"
+
+"markup.heading" = "accent"
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = "accent"
+"markup.raw" = "green"
+"markup.quote" = "muted"
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "orange"
+
+"ui.background" = { }
+"ui.text" = "foreground"
+"ui.text.inactive" = "muted"
+"ui.linenr" = { fg = "muted" }
+"ui.selection" = { bg = "selection_background", fg = "selection_foreground" }
+"ui.cursor" = { fg = "background", bg = "cursor" }
+"ui.statusline" = { fg = "background", bg = "foreground" }
+"ui.statusline.normal" = { fg = "background", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "background", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "accent", modifiers = ["bold"] }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "cyan", style = "curl" } }
+error = "red"
+warning = "yellow"
+info = "blue"
+hint = "cyan"
+
+[palette]
+background = "#F4F6F8"
+foreground = "#243746"
+lighter_background = "#FAFBFC"
+cursor = "#172A38"
+selection_background = "#DCE7F1"
+selection_foreground = "#243746"
+accent = "#466E92"
+muted = "#5F717D"
+red = "#B86B73"
+yellow = "#A98955"
+orange = "#B97B67"
+green = "#668C77"
+cyan = "#638E99"
+blue = "#466E92"
+bright_yellow = "#B99A67"
