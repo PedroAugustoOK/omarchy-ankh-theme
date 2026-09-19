@@ -1,5 +1,5 @@
 {
-  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
   "name": "Omarchy Ankh",
   "author": "Pedro Augusto",
   "themes": [
@@ -23,13 +23,65 @@
         "editor.gutter.background": "#F4F6F8",
         "terminal.background": "#F4F6F8",
         "terminal.foreground": "#243746",
-        "syntax.comment": "#5F717D",
-        "syntax.keyword": "#466E92",
-        "syntax.function": "#466E92",
-        "syntax.string": "#668C77",
-        "syntax.number": "#B97B67",
-        "syntax.type": "#A98955",
-        "syntax.operator": "#638E99"
+        "syntax": {
+          "comment": {
+            "color": "#5F717D",
+            "font_style": "italic"
+          },
+          "keyword": {
+            "color": "#466E92"
+          },
+          "function": {
+            "color": "#2D5C86"
+          },
+          "type": {
+            "color": "#8A6A2B"
+          },
+          "string": {
+            "color": "#3D765D"
+          },
+          "number": {
+            "color": "#9C5A38"
+          },
+          "constant": {
+            "color": "#8E6428"
+          },
+          "property": {
+            "color": "#3A7082"
+          },
+          "operator": {
+            "color": "#327A82"
+          },
+          "punctuation": {
+            "color": "#5F717D"
+          },
+          "macro": {
+            "color": "#327A82"
+          },
+          "decorator": {
+            "color": "#2D5C86"
+          }
+        },
+        "terminal.ansi.black": "#F4F6F8",
+        "terminal.ansi.red": "#B86B73",
+        "terminal.ansi.green": "#668C77",
+        "terminal.ansi.yellow": "#A98955",
+        "terminal.ansi.blue": "#466E92",
+        "terminal.ansi.magenta": "#897A98",
+        "terminal.ansi.cyan": "#638E99",
+        "terminal.ansi.white": "#486174",
+        "terminal.ansi.bright_black": "#5F717D",
+        "terminal.ansi.bright_red": "#C47B82",
+        "terminal.ansi.bright_green": "#789C88",
+        "terminal.ansi.bright_yellow": "#B99A67",
+        "terminal.ansi.bright_blue": "#6285A6",
+        "terminal.ansi.bright_magenta": "#9A8BAB",
+        "terminal.ansi.bright_cyan": "#759FA8",
+        "terminal.ansi.bright_white": "#172A38",
+        "error": "#A34B55",
+        "warning": "#8A6A2B",
+        "info": "#2D5C86",
+        "hint": "#327A82"
       }
     }
   ]
