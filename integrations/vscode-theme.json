@@ -4,23 +4,23 @@
   "type": "light",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "parameter": "#638E99",
-    "property": "#638E99",
+    "parameter": "#3A7082",
+    "property": "#3A7082",
     "variable": "#243746",
-    "function": "#466E92",
-    "method": "#466E92",
-    "class": "#A98955",
-    "interface": "#A98955",
-    "enum": "#A98955",
-    "type": "#A98955",
-    "typeParameter": "#A98955",
-    "string": "#668C77",
-    "number": "#B97B67",
-    "boolean": "#B97B67",
-    "operator": "#638E99",
+    "function": "#2D5C86",
+    "method": "#2D5C86",
+    "class": "#8A6A2B",
+    "interface": "#8A6A2B",
+    "enum": "#8A6A2B",
+    "type": "#8A6A2B",
+    "typeParameter": "#8A6A2B",
+    "string": "#3D765D",
+    "number": "#9C5A38",
+    "boolean": "#9C5A38",
+    "operator": "#327A82",
     "keyword": "#466E92",
-    "macro": "#638E99",
-    "decorator": "#466E92",
+    "macro": "#327A82",
+    "decorator": "#2D5C86",
     "comment": {
       "foreground": "#5F717D",
       "fontStyle": "italic"
@@ -43,7 +43,7 @@
         "constant.other.symbol"
       ],
       "settings": {
-        "foreground": "#668C77"
+        "foreground": "#3D765D"
       }
     },
     {
@@ -53,7 +53,7 @@
         "constant.character"
       ],
       "settings": {
-        "foreground": "#B97B67"
+        "foreground": "#9C5A38"
       }
     },
     {
@@ -74,7 +74,7 @@
         "meta.function-call"
       ],
       "settings": {
-        "foreground": "#466E92"
+        "foreground": "#2D5C86"
       }
     },
     {
@@ -85,7 +85,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#A98955"
+        "foreground": "#8A6A2B"
       }
     },
     {
@@ -95,7 +95,7 @@
         "punctuation.separator"
       ],
       "settings": {
-        "foreground": "#638E99"
+        "foreground": "#327A82"
       }
     },
     {
@@ -114,7 +114,7 @@
         "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#466E92"
+        "foreground": "#2D5C86"
       }
     },
     {
@@ -147,9 +147,9 @@
     "statusBar.foreground": "#F4F6F8",
     "titleBar.activeBackground": "#F4F6F8",
     "titleBar.activeForeground": "#243746",
-    "editorError.foreground": "#B86B73",
-    "editorWarning.foreground": "#A98955",
-    "editorInfo.foreground": "#466E92",
+    "editorError.foreground": "#A34B55",
+    "editorWarning.foreground": "#8A6A2B",
+    "editorInfo.foreground": "#2D5C86",
     "focusBorder": "#466E92"
   }
 }
