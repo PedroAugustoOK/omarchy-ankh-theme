@@ -11,6 +11,7 @@ MODE = "light"
 REQUIRED = {
     "ATTRIBUTIONS.md",
     "LICENSE",
+    "PREVIEWS.md",
     "README.md",
     "btop.theme",
     "colors.toml",

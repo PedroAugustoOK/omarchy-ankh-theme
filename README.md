@@ -30,7 +30,7 @@ A versão escura está em
 - Ícones Yaru Blue.
 - Tema do btop.
 - Quatro wallpapers PNG em 3840×2160.
-- Prévias ilustrativas de cores do desktop e do desbloqueio.
+- Capturas reais do desktop e da tela de bloqueio.
 - Contrato semântico de cores para código em `code-colors.toml`, com temas
   gerados para Zed, Helix e VS Code em `integrations/`.
 
@@ -42,8 +42,8 @@ arquivos de editor, execute `python3 scripts/generate-code-theme.py`.
 
 ![Prévia da tela de bloqueio Ankh](preview-unlock.png)
 
-A imagem de desbloqueio é ilustrativa; não é uma captura da sessão atual.
-O desbloqueio do disco (Plymouth) e o bloqueio da sessão são interfaces distintas.
+`preview-unlock.png` foi capturado pelo modo seguro de prévia do bloqueio do
+Omarchy. O desbloqueio do disco (Plymouth) é uma interface distinta.
 
 ## Wallpapers
 
