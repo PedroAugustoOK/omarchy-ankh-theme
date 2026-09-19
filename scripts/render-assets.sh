@@ -25,7 +25,7 @@ rsvg-convert -w "$wordmark_w" -h "$wordmark_h" /usr/share/omarchy/logo.svg -o "$
 magick "$work_dir/wordmark.png" -channel RGB +level-colors "$accent","$accent" "$work_dir/wordmark.png"
 magick -size "${canvas_w}x${canvas_h}" "xc:$background" \
   "$work_dir/wordmark.png" -gravity center -composite \
-  -depth 8 backgrounds/04-omarchy-wordmark.png
+  -depth 8 -strip backgrounds/04-omarchy-wordmark.png
 
 # Match Omarchy's Plymouth renderer: same 1920x1080 canvas, themed controls,
 # logo positioning and password-field geometry used during disk unlock.
@@ -58,4 +58,4 @@ magick -size 1920x1080 "xc:$background" \
   unlock.png -geometry "+${logo_x}+${logo_y}" -composite \
   "$work_dir/entry.png" -geometry "+${entry_x}+${entry_y}" -composite \
   \( "$work_dir/lock.png" -resize "${lock_w}x${lock_h}" \) -geometry "+${lock_x}+${lock_y}" -composite \
-  "$@" -depth 8 preview-unlock.png
+  "$@" -depth 8 -strip preview-unlock.png
