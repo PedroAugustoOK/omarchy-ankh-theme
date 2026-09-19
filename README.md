@@ -30,7 +30,7 @@ A versão escura está em
 - Ícones Yaru Blue.
 - Tema do btop.
 - Quatro wallpapers PNG em 3840×2160.
-- Capturas reais do desktop e da tela de bloqueio.
+- Captura real do desktop e prévia fiel do desbloqueio de disco Plymouth.
 - Contrato semântico de cores para código em `code-colors.toml`, com temas
   gerados para Zed, Helix e VS Code em `integrations/`.
 
@@ -38,12 +38,12 @@ Os papéis de keywords, funções, tipos, strings, números, comentários e
 diagnósticos são compartilhados com Ankh Dark e Mooni. Para regenerar os
 arquivos de editor, execute `python3 scripts/generate-code-theme.py`.
 
-## Tela de bloqueio
+## Desbloqueio de disco
 
-![Prévia da tela de bloqueio Ankh](preview-unlock.png)
+![Prévia do desbloqueio de disco Ankh](preview-unlock.png)
 
-`preview-unlock.png` foi capturado pelo modo seguro de prévia do bloqueio do
-Omarchy. O desbloqueio do disco (Plymouth) é uma interface distinta.
+`preview-unlock.png` é renderizado com o símbolo `unlock.png`, as cores do tema
+e a geometria oficial do Plymouth usada pelo Omarchy.
 
 ## Wallpapers
 
@@ -82,6 +82,7 @@ do parser e do servidor de linguagem, não apenas da paleta.
 ~~~bash
 python3 scripts/generate-code-theme.py
 python3 scripts/generate-code-theme.py --check
+sh scripts/render-assets.sh
 python3 scripts/validate-theme.py
 ~~~
 
